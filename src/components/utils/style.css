@@ -50,7 +50,7 @@
         width:80%;
         margin:0 auto;
         z-index: 1;
-        background-image: linear-gradient(to top right,#a10707,#fe5e5e);
+        background-image: linear-gradient(to top right,#fe5e5e,rgb(26, 25, 25));
         border-radius: 10%;
         box-shadow: 8px 8px 8px #d8d7d7;
     }
@@ -94,7 +94,7 @@
         top:60px;
         display: inline-block;
         width:30%;
-        background-image: linear-gradient(to top right,#a10707,#fe5e5e);
+        background-image: linear-gradient(to top right,#fe5e5e,rgb(26, 25, 25));
         border-radius: 10px;
         box-shadow: 8px 8px 8px #d8d7d7;
     }
@@ -289,6 +289,70 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
     margin-top:20px;
 }
 
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom:90px;
+}
+
+.mainCard{
+    background-image: linear-gradient(to left top, #000000, #070102, #0e0204, #130406, #170507, #271113, #39171b, #4c1e21, #752d31, #a13c40, #cf4d4f, #fe5e5e);
+    color:white;
+    height:40vhmin;
+    width:83%;
+    margin:20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 10px 10px 18px rgba(158, 158, 158, 0.651);
+}
+
+.mainCard p{
+    padding:10px;
+    margin-bottom:0.5rem ;
+}
+
+.mainCard img{
+    float:right;
+}
+
+.mainCard hr{
+    border:0.1px solid white;
+    width:100%;
+    margin-bottom:0;
+    margin-top:0px;
+}
+
+.mainCard a p{
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    margin-top:8px;
+    margin-left:18%;
+}
+
+@keyframes mainCardArrow{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(359deg);
+    }
+}
+
+.mainCard a img{
+    float: none;
+    animation-name: mainCardArrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* -webkit-animation: mainCardArrow 2s 0 infinte normal linear; */
+}
+
+
 @media(min-width:1025px){
 .mainHead-test{
     position: absolute;
@@ -314,6 +378,16 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
     left:35%;
 }
 
+.mainCard{
+    width:40%;
+}
+
+}
+
+@media (max-width:320px){
+    .mainCard a p{
+        margin-left:3%;
+    }
 }
 
 @media (max-width:767px){
@@ -333,24 +407,25 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
   }
 
 .mainHead-test1{
-    left:30px;
-    top: 140px;
+    left:5%;
+    top: 20%;
 }
 
 .mainHead-test2{
-    top:140px;
-    left:280px;
+    top:20%;
+    left:75%;
 }
 
 .mainHead-test3{
-    left:30px;
-    top: 280px;
+    left:5%;
+    top: 40vh;
 }
 
 .mainHead-test4{
-    top:280px;
-    left:280px;
+    top:40vh;
+    left:75%;
 }
+
 
 }
 
@@ -378,7 +453,13 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
     top:40%;
     left:35%;
 }
+
+.mainCard{
+    width:40%;
 }
+
+}
+
 
 /* Footer styling */
 footer{

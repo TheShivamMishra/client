@@ -79,7 +79,7 @@ const FormPage = () => {
                     <p className="font-small grey-text mt-3">
                       Don't have an account?
                       <a
-                        href="#!"
+                        href="/signup"
                         className="dark-grey-text ml-1 font-weight-bold"
                       >
                         Sign up
