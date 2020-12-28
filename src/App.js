@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
+import Home from "./components/Home"
+import About from "./components/About"
+import Login from "./components/utils/Login"
+import SignUp from "./components/utils/SignUp";
+import Main from "./components/Main";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/main" exact component={Main}></Route>
+          <Route path="/about" exact component={About}></Route>
+          <Route path="/login" exact component={Login}></Route>
+          <Route path="/signup" exact component={SignUp}></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
