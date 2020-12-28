@@ -15,7 +15,7 @@
 }
 
 .bg-dark{
-    background-image: linear-gradient(to bottom right, #04070a, #fe5e5e) !important;
+    background-image: linear-gradient(to bottom right, black, #8a0707,black) !important;
 }
 
 .navbar-dark .navbar-toggler-icon {

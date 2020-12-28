@@ -64,19 +64,20 @@ function Main() {
               convenience{" "}
             </p>
             <hr />
-            <Link to="/donateblood">
+            <Link to="/blood/donate">
               <p>Donate for Cause</p>
-              <img src={leftArrow} width="10%" alt=""></img>
+                <img src={leftArrow} width="10%" alt=""></img>
             </Link>
           </div>
           <div className="mainCard">
             <p>
               <img src={secondImg} width="30%" alt=""></img>
               In Every 2s someone somewhere needs blood to save his/her life,
-              unavailability of same blood is real threat to life sometimes.Get required blood in no time.
+              unavailability of same blood is real threat to life sometimes.Get
+              required blood in no time.
             </p>
             <hr />
-            <Link to="/recieveblood">
+            <Link to="/blood/fetch">
               <p>Recieve vital Blood</p>
               <img src={leftArrow} width="10%" alt=""></img>
             </Link>
